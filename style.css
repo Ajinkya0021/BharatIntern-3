@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+}
+
+.container::before{
+    content: "";
+    background: url("background.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.container .navbar{
+    height: 100px;
+    display: flex;
+}
+.container .navbar .left{
+    height: 100%;
+    display: flex;
+    float:left;
+
+}
+
+.container .navbar .left img{
+    height: 100px;
+    position:absolute ;
+    left:35px;
+}
+
+.container .navbar .right{
+    height: 100px;
+    display: flex;
+    position: absolute;
+    float: right;
+    right: 50px;
+}
+
+.container .navbar .right .language{
+    margin: auto;
+    align-items: center;
+    padding:7px 10px;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    background:none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.container .navbar .right .language option{
+    background-color: grey;
+}
+
+.container .navbar .right button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 7px 10px;
+    background-color: red;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.text h1{
+    font-size: 40px;
+}
+
+.text input{
+    width:325px;
+    margin: 8px 0px;
+    padding: 5px 5px;
+}
+.text button{
+    margin: -5px;
+    padding: 6px;
+    background-color: red;
+    color: white;
+}
+
+.text .p1{
+   font-size: 18px;
+}
+.text .p2{
+    font-size: 13px;
+}
+.text{
+    text-align: center;
+    margin: 100px 10px;
+    font-family: 'AR One Sans';
+}
